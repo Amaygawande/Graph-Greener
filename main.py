@@ -35,7 +35,7 @@ def get_filename(prompt, default="data.txt"):
 
 def random_date_in_last_year():
     today = datetime.now()
-    start_date = today - timedelta(days=365)
+    start_date = today - timedelta(days=365+365)
     random_days = random.randint(0, 364)
     random_seconds = random.randint(0, 23*3600 + 3599)
     commit_date = start_date + timedelta(days=random_days, seconds=random_seconds)
